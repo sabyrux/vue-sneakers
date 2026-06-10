@@ -16,7 +16,7 @@
               class="flex items-center gap-2 font-semibold text-gray-500 hover:text-black transition-colors"
             >
               <img src="/nav-menu/cart.svg" alt="Корзина" width="18" height="18" />
-              <span>1205 руб.</span>
+              <span>1 205 тг.</span>
             </a>
           </li>
           <li>
