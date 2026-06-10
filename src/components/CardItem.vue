@@ -38,7 +38,7 @@ const onAddClick = () => {
       loading="lazy"
     />
     <img :src="imgSrc" :alt="title" width="133" height="112" loading="lazy" />
-    <h2 class="text-sm">{{ title }}</h2>
+    <h3 class="text-sm">{{ title }}</h3>
     <div class="flex justify-between items-center">
       <div class="flex flex-col">
         <span class="text-xs text-gray-400">Цена:</span>

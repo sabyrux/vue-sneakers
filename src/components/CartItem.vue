@@ -10,7 +10,7 @@ const { imgSrc, title, price } = defineProps<Props>()
 
 <template>
   <article
-    class="flex gap-4 rounded-[20px] p-5 border border-gray-200 transition hover:-translate-y-2 hover:shadow-xl"
+    class="flex items-center gap-4 rounded-[20px] p-5 border border-gray-200 transition hover:-translate-y-2 hover:shadow-xl"
   >
     <img :src="imgSrc" :alt="title" width="70" height="70" loading="lazy" />
     <div>
