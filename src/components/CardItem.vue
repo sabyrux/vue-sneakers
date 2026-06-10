@@ -28,15 +28,17 @@ const onAddClick = () => {
   <article
     class="relative flex flex-col gap-3.5 py-6 px-7 w-56 rounded-[40px] border border-gray-200 transition hover:-translate-y-2 hover:shadow-xl cursor-pointer"
   >
-    <img
-      class="absolute cursor-pointer transition hover:shadow-xl hover:scale-115 active:scale-90"
-      @click="onLikeClick"
-      :src="isLiked ? '/heart/heart-fill.svg' : '/heart/heart-outline.svg'"
-      alt="Unlike"
-      width="32"
-      height="32"
-      loading="lazy"
-    />
+    <button type="button">
+      <img
+        class="absolute cursor-pointer transition hover:shadow-xl hover:scale-115 active:scale-90"
+        @click="onLikeClick"
+        :src="isLiked ? '/heart/heart-fill.svg' : '/heart/heart-outline.svg'"
+        alt="Unlike"
+        width="32"
+        height="32"
+        loading="lazy"
+      />
+    </button>
     <img :src="imgSrc" :alt="title" width="133" height="112" loading="lazy" />
     <h3 class="text-sm">{{ title }}</h3>
     <div class="flex justify-between items-center">
@@ -44,15 +46,17 @@ const onAddClick = () => {
         <span class="text-xs text-gray-400">Цена:</span>
         <span class="text-sm font-bold">{{ price.toLocaleString('ru-RU') }} тг.</span>
       </div>
-      <img
-        class="cursor-pointer transition hover:shadow-xl hover:scale-115 active:scale-90"
-        @click="onAddClick"
-        :src="isAdded ? '/cart/checked.svg' : '/cart/plus.svg'"
-        alt="Add"
-        width="32"
-        height="32"
-        loading="lazy"
-      />
+      <button type="button">
+        <img
+          class="cursor-pointer transition hover:shadow-xl hover:scale-115 active:scale-90"
+          @click="onAddClick"
+          :src="isAdded ? '/cart/checked.svg' : '/cart/plus.svg'"
+          alt="Add"
+          width="32"
+          height="32"
+          loading="lazy"
+        />
+      </button>
     </div>
   </article>
 </template>
